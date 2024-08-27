@@ -24,7 +24,6 @@ global class CredentialVerificationService {
         Contact contact = contacts[0];
         System.debug('Found contact with Id: ' + contact.Id);
         
-        
         // Consulta para encontrar a certificação do contato através do relacionamento com Certification__c
         List<Contact_Certification__c> certifications = [
             SELECT Id, isActive__c, Name
